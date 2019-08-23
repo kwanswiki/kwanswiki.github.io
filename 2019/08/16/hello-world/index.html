@@ -167,7 +167,23 @@
             <div class="post-full-content">
                 <article id="lightgallery" class="markdown-body">
                     <p>Welcome to the my page.</p>
+<h3 id="Flowchart-Example"><a href="#Flowchart-Example" class="headerlink" title="Flowchart Example"></a>Flowchart Example</h3><div id="flowchart-0" class="flow-chart"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none"> 
+st=>start: Start|past:>http://www.google.com[blank]
+e=>end: End:>http://www.google.com
+op1=>operation: My Operation|past
+op2=>operation: Stuff|current
+sub1=>subroutine: My Subroutine|invalid
+cond=>condition: Yes
+or No?|approved:>http://www.google.com
+c2=>condition: Good idea|rejected
+io=>inputoutput: catch something...|request
 
+st->op1(right)->cond
+cond(yes, right)->c2
+cond(no)->sub1(left)->op1
+c2(yes)->io->e
+c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script>
                 </article>
                 <ul class="tags-postTags">
                     
@@ -200,7 +216,7 @@
         </a>
     </div>
     <div class="toc-main">
-        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Flowchart-Example"><span class="toc-text">Flowchart Example</span></a></li></ol>
     </div>
 </div>
 
